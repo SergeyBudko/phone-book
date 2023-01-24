@@ -28,6 +28,15 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+# Список используемых серверных систем аутентификации
+AUTHENTICATION_BACKENDS = [
+    "django_auth_ldap.backend.LDAPBackend"
+
+    # базовый сервер аутентификации, который проверяет базу данных пользователей Django и запрашивает встроенные разрешения.
+    "django.contrib.auth.backends.ModelBackend",
+]
+
+
 # Application definition
 
 INSTALLED_APPS = [
