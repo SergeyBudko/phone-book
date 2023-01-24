@@ -1,0 +1,135 @@
+{% load static %}
+{% extends 'main/layout.html' %}
+
+<!doctype html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8"/>
+        <title>Авторизация</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description">
+        <meta content="Themesbrand" name="author">
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="static/main/assets/images/favicon.ico">
+        <!-- Bootstrap Css -->
+        <link href="static/main/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+        <!-- Icons Css -->
+        <link href="static/main/assets/css/icons.min.css" rel="stylesheet" type="text/css">
+        <!-- App Css-->
+        <link href="static/main/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css">
+        <!-- Custom Css-->
+        <link href="static/main/assets/css/custom.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body> 
+        <!-- Loader -->         
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner"></div>
+            </div>
+        </div>         
+        <!-- Begin page -->         
+        <div class="accountbg section-login"></div>
+        <div class="account-pages"> 
+            <div class="container"> 
+                <div class="div-content-center">
+                    <div class="card-shadow" style="margin-bottom: 34px;">
+                        <div class="row">
+                            <div class="align-items-stretch col-md-6 column-blue d-flex">
+                                <div class="card dop-style-card"> 
+                                    <div class="card-body dop-style-card-body">
+                                        <div class="block-info-portal-content">
+                                            <h3 class="text-white">Авторизация в системе</h3>
+                                            <p class="text-light">Пройдите авторизацию для доступа к АИС &quot;Корпоративный телефонный справочник ИТЦ ООО &quot;Газпром энерго&quot;</p>
+                                            <small><span style="background-color: transparent; font-family: var(--bs-font-sans-serif);" class="text-light">Данная автоматизированная информационная система предназначена для предоставления данных (ФИО, телефон, e-mail др.) по сотрудникам Инженерно-технического центра ООО &quot;Газпром энерго&quot;.</span></small>
+                                            <p class="mt-5 text-light text-margin-top">Если не можете авторизоваться в информационной системе, то обратитесь в <a href="#" class="fw-bold text-warning">техподдержку</a></p>
+                                        </div>
+                                        <div class="block-auto-bg-logo d-flex justify-content-center">
+                                            <img src="static/main/assets/images/big_bg_img_logo.png" width="90%">
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>
+                            <div class="col-md-6 column-blue dop-style-column">
+                                <div class="card dop-style-card"> 
+                                    <div class="card-body"> 
+                                        <div class="text-center mt-4"> 
+                                            <div class="mb-3"> 
+                                                <img src="static/main/assets/images/shield20(1).png" height="100" style="opacity: 0.5;">
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="p-3"> 
+                                            <h4 class="fs-4 mt-2 text-center">Вход</h4> 
+                                            <p class="text-muted text-center mb-4">Укажите ниже свои данные и нажмите на кнопку &laquo;Вход&raquo;</p> 
+                                            <form class="form-horizontal" action="index.html"> 
+                                                <div class="mb-3"> 
+                                                    <label class="form-label fw-normal" for="username">Логин:</label>                                                     
+                                                    <input type="text" class="border-light form-control" id="username" name="username" placeholder="Enter username">
+                                                </div>
+                                                <div class="mb-3"> 
+                                                    <label class="form-label fw-normal" for="username">Филиал:</label>
+                                                    <div class="dropdown"> 
+                                                        <button class="bg-white border-light btn dropdown-toggle form-control text-start" type="button" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false">Выбор филиала</button>                                                         
+
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdown1"> 
+                                                            <li>
+                                                                <a class="dropdown-item" href="#">Action</a>
+                                                            </li>                                                             
+
+                                                            <li>
+                                                                <a class="dropdown-item" href="#">Another action</a>
+                                                            </li>                                                             
+
+                                                            <li>
+                                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                            </li>                                                             
+                                                        </ul>                                                         
+                                                    </div>                                                                                                          
+                                                </div>                                                 
+                                                <div class="mb-3"> 
+                                                    <label class="form-label fw-normal" for="userpassword">Пароль:</label>                                                     
+                                                    <input type="password" class="border-light form-control" id="userpassword"
+                                                           name="password" placeholder="Enter password">
+                                                </div>                                                 
+                                                <div class="row mt-4"> 
+                                                    <div class="col-sm-6"> 
+                                                        <div class="form-check"> 
+                                                            <input class="form-check-input" type="checkbox"
+                                                                   value="" id="customControlInline">
+                                                            <label class="form-check-label fw-light text-muted"
+                                                                   for="customControlInline">Запомнить меня</label>
+                                                        </div>                                                         
+                                                    </div>                                                     
+                                                    <div class="col-sm-6 text-end"> 
+                                                        <button class="btn btn-primary w-md waves-effect waves-light"
+                                                                type="submit">Вход</button>
+                                                    </div>                                                     
+                                                </div>                                                 
+                                                <div class="mb-0 row"> 
+                                                    <div class="col-12 mt-4">
+                                                        <a href="pages-recoverpw.html" class="text-muted">
+                                                            <i class="mdi mdi-lock"></i> Забыли свой пароль?
+                                                        </a>
+                                                    </div>                                                     
+                                                </div>                                                 
+                                            </form>
+                                        </div>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 text-center position-relative"> 
+                        <p class="text-white"><script>document.write(new Date().getFullYear())</script> &copy; ИТЦ ООО &quot;Газпром энерго&quot;</p> 
+                    </div>
+                </div>                 
+            </div>             
+        </div>         
+        <!-- JAVASCRIPT -->         
+        <script src="static/main/assets/libs/jquery/jquery.min.js"></script>
+        <script src="static/main/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="static/main/assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="static/main/assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="static/main/assets/libs/node-waves/waves.min.js"></script>
+        <script src="static/main/assets/js/app.js"></script>
+    </body>     
+</html>
