@@ -15,10 +15,6 @@ def login_user(request):
             messages.success(request, ('Произошла ошибка, попробуйте еще раз'))
             return redirect('login')
 
-
-
-
-
     else:
         return render(request, 'authenticate/login.html', {})
 
